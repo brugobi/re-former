@@ -20,7 +20,14 @@ You can get a local copy of the repository please run the following commands on 
 ## Play with the application
 
 - If you run the follow command on your terminal, you will be able to run the code on your web browser
+
   ``$ rails server``
+
+- To test the Forms you can run the server with rails server and navigate to:
+
+    ``http://localhost:3000/users/``
+    ``http://localhost:3000/users/new``
+    ``http://localhost:3000/users/:id/edit``
 
 - After that you will be able to create, edit and delete new users.
 
