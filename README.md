@@ -1,6 +1,6 @@
-# Bare Metal Forms and Helpers
+# User Form and Helpers
 
- This project is about building a form in rails that can send parameters to a controller so that it can build an instance of a model with those parameters.
+ This project is about building a form in rails that can send parameters to a controller so that it can build an instance of a model with those parameters. You will be able to create, edit and delete users from the platform.
 
 ## Built With
 
@@ -15,7 +15,7 @@ You can get a local copy of the repository please run the following commands on 
 
 ``$ cd <folder>``
 
-``$ git clone git@github.com:emiliocm9/micro-reddit.git``
+``$ git clone https://github.com/brugobi/re-former.git``
 
 ## Playing with Validations
 
