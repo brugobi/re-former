@@ -1,5 +1,5 @@
-<form accept-charset="UTF-8" action="new" method="get">
-  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+<%# <form accept-charset="UTF-8" action="new" method="get">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token
   <label for="username">User_name:</label>
   <input type="text" id="username" name="username"><br><br>
   <label for="email">Email:</label>
@@ -7,4 +7,21 @@
   <label for="password">Password:</label>
   <input type="password" id="passwword" name="password"><br><br>
   <input type="submit" value="Submit">
-</form>
+</form> %>
+
+<%# <%= form_tag(url: "/new", method: "get") do %>
+<%#  <%= label_tag(:username, 'Username:') %>
+<%#  <%= text_field_tag(:username) %>
+<%#  <%= label_tag(:email, 'Email:') %>
+<%#  <%= email_field_tag(:email) %>
+<%#  <%= label_tag(:password, 'Password:') %>
+<%#  <%= password_field_tag(:email) %>
+<%#  <%= submit_tag('Submit') %>
+<%#<% end %>
+
+<%= form_for(@user) do |f| %>
+  Your username here: <%= f.text_field :username %><br />
+  Email : <%= f.email_field :email, placeholder: "example@example.com" %><br />
+  Password : <%= f.password_field :password %><br />
+  <%= f.submit %>
+<% end %>

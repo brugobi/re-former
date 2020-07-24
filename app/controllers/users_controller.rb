@@ -12,6 +12,10 @@ class UsersController < ApplicationController
             render :new
         end
     end
+
+    def edit
+        @user = User.find(paramas[:id])
+    end
     
     private
     def user_param
