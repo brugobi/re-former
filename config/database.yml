@@ -22,5 +22,5 @@ test:
 
 production:
   <<: *default
-  database: db/production.pg
+  database: db/production.sqlite3
   

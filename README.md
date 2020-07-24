@@ -17,19 +17,30 @@ You can get a local copy of the repository please run the following commands on 
 
 ``$ git clone https://github.com/brugobi/re-former.git``
 
-## Playing with Validations
+## Play with the application
 
-- You can set a new User run on the terminal following the command:
+- If you run the follow command on your terminal, you will be able to run the code on your web browser
+  ``$ rails server``
 
-``u1 = User.new(attributes)``
+- After that you will be able to create, edit and delete new users.
 
-- You can set a new Post run on the terminal following the command:
+- While creating a new user, placing a username, email and password is mandatory.
 
-``p1 = Post.new(attributes)``
+- If you don't give the proper information, you will get a list of errors after clicking on the submit button.
 
-- You can set a new Comment run on the terminal following the command:
+- The validation errors are also available for the edit option.
 
-``c1 = Comment.new(attributes)``
+## App Information
+
+The App has the next pages:
+
+- Index: to display all the usernames created so far.
+
+- Show: after clicking on the username from the index page, you will get the User information (username and email).
+
+- Edit: While you are on the show page, you will have 2 options: edit or delete. If you click on edit you will get a page where you can change the user information as username, email and password.
+
+- Create: On the index page, there's a option to create a new user. If you click on it, you will be able to create a new user by just placing the correct information.
 
 ## Authors
 
