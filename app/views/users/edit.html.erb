@@ -1,12 +1,3 @@
-<%= form_for(@user) do |f| %>
-  <h1>Edit User</h1>
-  <ul>
-    <%@user.errors.full_messages.each do |error| %>
-    <li><%= error%></li>
-    <%end%>
-  </ul>
-  Your username here: <%= f.text_field :username %><br/><br />
-  Email : <%= f.email_field :email, placeholder: "example@example.com" %><br/><br/>
-  Password : <%= f.password_field :password %><br/><br/>
-  <%= f.submit %>
-<% end %>
+<h1>Edit User</h1>
+
+<%= render "form" %>
